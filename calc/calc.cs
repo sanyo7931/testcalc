@@ -20,7 +20,15 @@ namespace calc
         }
         public int Div(int x,int y)
         {
-            return x / y;
+            try
+            {
+                return x / y;
+            }
+            catch(Exception)
+            {
+                return 0;
+            }
+            
         }
     }
 }
